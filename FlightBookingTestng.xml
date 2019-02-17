@@ -1,0 +1,10 @@
+<suite name="Flight Booking" time-out="300000" verbose="2">
+<listeners>
+	<listener class-name='com.dazzler.util.Listener'/>
+</listeners>
+	<test name="Flight Booking Portal">
+		<classes>
+			<class name="com.dazzler.booking.FlightBooking" />
+		</classes>
+	</test>
+</suite>

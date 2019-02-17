@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[First Reservation Done]]>
+    </line>
+    <line>
+      <![CDATA[Second Reservation Done]]>
+    </line>
+  </reporter-output>
+  <suite name="Flight Booking" duration-ms="72756" started-at="2019-02-17T06:45:17Z" finished-at="2019-02-17T06:46:30Z">
+    <groups>
+    </groups>
+    <test name="Flight Booking Portal" duration-ms="72756" started-at="2019-02-17T06:45:17Z" finished-at="2019-02-17T06:46:30Z">
+      <class name="com.dazzler.booking.FlightBooking">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dazzler.booking.FlightBooking@675d3402]" name="init" is-config="true" duration-ms="3279" started-at="2019-02-17T12:15:14Z" finished-at="2019-02-17T12:15:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.dazzler.booking.FlightBooking@675d3402]" name="login" duration-ms="60661" started-at="2019-02-17T12:15:17Z" description="Login" finished-at="2019-02-17T12:16:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="travel()[pri:0, instance:com.dazzler.booking.FlightBooking@675d3402]" name="travel" duration-ms="6656" started-at="2019-02-17T12:16:18Z" description="First Reservation" depends-on-methods="com.dazzler.booking.FlightBooking.login" finished-at="2019-02-17T12:16:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[First Reservation Done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- travel -->
+        <test-method status="PASS" signature="travelagain()[pri:0, instance:com.dazzler.booking.FlightBooking@675d3402]" name="travelagain" duration-ms="5425" started-at="2019-02-17T12:16:24Z" description="Second Reservation" depends-on-methods="com.dazzler.booking.FlightBooking.travel" finished-at="2019-02-17T12:16:30Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Second Reservation Done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- travelagain -->
+        <test-method status="PASS" signature="exit()[pri:0, instance:com.dazzler.booking.FlightBooking@675d3402]" name="exit" is-config="true" duration-ms="68" started-at="2019-02-17T12:16:30Z" finished-at="2019-02-17T12:16:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+      </class> <!-- com.dazzler.booking.FlightBooking -->
+    </test> <!-- Flight Booking Portal -->
+  </suite> <!-- Flight Booking -->
+</testng-results>

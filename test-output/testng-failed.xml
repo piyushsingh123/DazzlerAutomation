@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Failed suite [Flight Booking]">
+  <listeners>
+    <listener class-name="com.dazzler.util.Listener"/>
+  </listeners>
+  <test name="Flight Booking Portal(failed)">
+    <classes>
+      <class name="com.dazzler.booking.FlightBooking">
+        <methods>
+          <include name="login"/>
+          <include name="init"/>
+          <include name="travel"/>
+          <include name="exit"/>
+          <include name="travelagain"/>
+        </methods>
+      </class> <!-- com.dazzler.booking.FlightBooking -->
+    </classes>
+  </test> <!-- Flight Booking Portal(failed) -->
+</suite> <!-- Failed suite [Flight Booking] -->
